@@ -36,7 +36,7 @@
 .subtitle {
   font-size: 1.3em;
   @include md {
-    font-size: 1.5em;
+    font-size: 1.8em;
   }
 }
 .break {

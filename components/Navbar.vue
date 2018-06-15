@@ -5,7 +5,7 @@
       each link in links
         a(href="#").nav-item
           i(class=`fa fa-${link[1]} fa-2x`)
-          span= link[0]
+          span.link-text= link[0]
 </template>
 
 <style lang="scss" scoped>
@@ -39,7 +39,8 @@
     }
   }
 
-  & span {
+  & .link-text {
+    font-size: 1.2em;
     @include md {
       margin-left: 10px;
     }
