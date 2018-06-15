@@ -1,8 +1,10 @@
 <template lang="pug">
-  div.banner
-    h1.title Grounds Central Station
-    h3.subtitle 9360 Main Street, Manassas
-    h3.subtitle Mon-Thurs: 6am - 9pm, Fri: 6am- 10pm, Sat: 7am - 10pm, Sun: 8am - 8pm
+  div.section
+    div.banner
+      h1.title Grounds Central Station
+      h3.subtitle 9360 Main Street, Manassas
+      h3.subtitle Mon-Thurs: 6am - 9pm, Fri: 6am- 10pm, Sat: 7am - 10pm, Sun: 8am - 8pm
+    hr.break
 </template>
 
 <style lang="scss" scoped>
@@ -13,6 +15,7 @@
   background-position: center;
   background-size: cover;
   height: 15em;
+  width: 100%;
 }
 .title,
 .subtitle {
@@ -22,13 +25,23 @@
   font-weight: 400;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white;
-
+  margin-bottom: 20px;
+}
+.title {
+  font-size: 2em;
   @include md {
+    font-size: 4em;
   }
 }
-.title,
 .subtitle {
-  margin-bottom: 20px;
+  font-size: 1.3em;
+  @include md {
+    font-size: 1.5em;
+  }
+}
+.break {
+  margin: 10px 0;
+  border: none;
 }
 </style>
 
