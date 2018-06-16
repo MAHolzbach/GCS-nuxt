@@ -15,6 +15,7 @@
   margin: 0 auto;
   border-top: 2px solid black;
   border-bottom: 2px solid black;
+  text-align: left;
 }
 .nav-links {
   font-family: "Righteous", cursive;
@@ -29,7 +30,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  flex: 1;
 
   & .fa-2x {
     display: none;
@@ -40,7 +40,7 @@
   }
 
   & .link-text {
-    font-size: 1.2em;
+    font-size: 1em;
     @include md {
       margin-left: 10px;
     }
