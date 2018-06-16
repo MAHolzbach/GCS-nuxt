@@ -1,15 +1,15 @@
 <template lang="pug">
-- const links = [["Home", "home"], ["Menu", "coffee"], ["Contact Us", "envelope"]]
+- const links = [["Home", "home", "/"], ["Menu", "coffee", "/menu"], ["Contact Us", "envelope", "/contact"]]
   div.navbar
     div.nav-links
       each link in links
-        a(href="#").nav-item
+        nuxt-link(to=`${link[2]}`).nav-item
           i(class=`fa fa-${link[1]} fa-2x`)
           span.link-text= link[0]
 </template>
 
 <style lang="scss" scoped>
-@import "~/layouts/variables.scss";
+@import "../assets/variables.scss";
 .navbar {
   width: 80%;
   margin: 0 auto;
@@ -47,7 +47,7 @@
   }
 
   &:hover {
-    color: #965f41;
+    color: $brand-brown;
   }
 }
 </style>

@@ -14,6 +14,10 @@ module.exports = {
     // ]
     script: [{ src: "https://use.fontawesome.com/releases/v5.0.13/js/all.js" }]
   },
+  generate: {
+    fallback: true
+  },
+  css: ["assets/variables.scss"],
   /*
   ** Customize the progress bar color
   */

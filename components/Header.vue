@@ -9,7 +9,7 @@
 
 <style lang="scss" scoped>
 @import url("https://fonts.googleapis.com/css?family=Righteous");
-@import "~/layouts/variables.scss";
+@import "../assets/variables.scss";
 .banner {
   background-image: url("/static/coffee-banner.png");
   background-position: center;

@@ -37,3 +37,14 @@ $screen-xxl: 1500px;
     @content;
   }
 }
+//Colors
+$brand-brown: #965f41;
+
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.2s;
+}
+.page-enter,
+.page-leave-to {
+  opacity: 0;
+}
