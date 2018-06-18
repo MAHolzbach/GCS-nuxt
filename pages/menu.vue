@@ -25,16 +25,19 @@
           h2.list-title Breakfast Items
           for item in breakfastItems
             li.menu-item= item
+    Footer
 </template>
 
 <script>
 import Header from "../components/Header.vue";
 import Navbar from "../components/Navbar.vue";
+import Footer from "../components/Footer.vue";
 
 export default {
   components: {
     Header,
-    Navbar
+    Navbar,
+    Footer
   }
 };
 </script>
@@ -72,6 +75,7 @@ export default {
 }
 .menu-list {
   list-style: none;
+  margin-bottom: 20px;
 }
 .menu-item {
   font-size: 1.2em;

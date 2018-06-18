@@ -16,19 +16,21 @@
   background-size: cover;
   height: 15em;
   width: 100%;
+  padding-bottom: 20px;
 }
 .title,
 .subtitle {
   font-family: "Righteous", cursive;
-  color: black;
+  color: white;
   text-align: center;
   font-weight: 400;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: white;
+  -webkit-text-stroke-color: black;
   margin-bottom: 20px;
 }
 .title {
   font-size: 2em;
+  padding-top: 20px;
   @include md {
     font-size: 4em;
   }
@@ -36,7 +38,7 @@
 .subtitle {
   font-size: 1.3em;
   @include md {
-    font-size: 1.8em;
+    font-size: 2em;
   }
 }
 .break {
