@@ -40,6 +40,21 @@ export default {
     Footer
   }
 };
+
+//!Use AJ's project as a template
+// const contentful = require("contentful");
+
+// const client = contentful.createClient({
+//   space: "lh8rpm1vskzm",
+//   environment: "master",
+//   accessToken:
+//     "9a71a0c5974156e1b27f61a61c1130a073b1fc8f372303e78558ffb71637c3bc"
+// });
+
+// client
+//   .getEntries()
+//   .then(response => console.log(response.items))
+//   .catch(error => console.log(error));
 </script>
 
 <style lang="scss" scoped>
