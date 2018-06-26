@@ -1,3 +1,5 @@
+const config = require("./.contentful.json");
+
 module.exports = {
   /*
   ** Headers of the page
@@ -14,6 +16,10 @@ module.exports = {
     // ]
     script: [{ src: "https://use.fontawesome.com/releases/v5.0.13/js/all.js" }]
   },
+  env: {
+    GCS_SPACE: config.GCS_SPACE,
+    GCS_TOKEN: config.GCS_TOKEN
+  },
   generate: {
     fallback: true
   },
@@ -25,8 +31,5 @@ module.exports = {
   /*
   ** Build configuration
   */
-  build: {},
-  node: {
-    fs: "empty"
-  }
+  build: {}
 };

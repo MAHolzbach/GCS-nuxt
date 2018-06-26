@@ -1,0 +1,26 @@
+[
+  {
+    "sys": {
+      "space": {
+        "sys": { "type": "Link", "linkType": "Space", "id": "lh8rpm1vskzm" }
+      },
+      "id": "7c6ZZtbklOGkYUS0c2C4gK",
+      "type": "Entry",
+      "createdAt": "2018-06-25T15:38:26.223Z",
+      "updatedAt": "2018-06-25T15:38:26.223Z",
+      "environment": {
+        "sys": { "id": "master", "type": "Link", "linkType": "Environment" }
+      },
+      "revision": 1,
+      "contentType": {
+        "sys": { "type": "Link", "linkType": "ContentType", "id": "menuItem" }
+      },
+      "locale": "en-US"
+    },
+    "fields": {
+      "itemName": "Americano",
+      "price": "2.25",
+      "description": "Yummy"
+    }
+  }
+]

@@ -40,19 +40,6 @@ export default {
     Footer
   }
 };
-
-const contentful = require("contentful");
-const client = contentful.createClient({
-  space: "lh8rpm1vskzm",
-  accessToken:
-    "9a71a0c5974156e1b27f61a61c1130a073b1fc8f372303e78558ffb71637c3bc"
-});
-
-(async () => {
-  const menuItems = await client.getEntries();
-  console.log(menuItems);
-
-})()
 </script>
 
 <style lang="scss" scoped>
