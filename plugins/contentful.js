@@ -8,9 +8,7 @@ const contentful = createClient({
 });
 
 (async () => {
-  const menuItems = await contentful.getEntries({
-    content_type: "menuItem"
-  });
+  const menuItems = await contentful.getEntries();
 
   fs.writeFileSync(
     resolve(__dirname, "../assets/contentful.json"),
