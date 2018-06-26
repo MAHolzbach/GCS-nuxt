@@ -1,7 +1,5 @@
 <template lang="pug">
   div
-    Header
-    Navbar
     div.content
       div.grid-square.logo-area
         img(src="../static/gcs-logo.jpg", alt="logo").logo
@@ -11,21 +9,10 @@
       div.grid-square.history
         h2 History
         p We opened on May 15th 2010 with the mission to bring quality coffee products in a relaxed setting to Old Town Manassas. We have since grown into a vibrant, active part of the business community, proudly serving locally roasted Monument Coffee. We have expanded our menu over the years to offer all day breakfast, freshly made paninis and sandwiches, as well as Eddy's Ice Cream and a selection of scones, muffins, cookies, and brownies. We pride ourselves on providing a quality product and a high level of customer service. Catering services are available and we welcome groups.
-    Footer
 </template>
 
 <script>
-import Header from "../components/Header.vue";
-import Navbar from "../components/Navbar.vue";
-import Footer from "../components/Footer.vue";
-
-export default {
-  components: {
-    Header,
-    Navbar,
-    Footer
-  }
-};
+export default {};
 </script>
 
 <style lang="scss" scoped>
