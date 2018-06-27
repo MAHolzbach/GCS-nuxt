@@ -2,61 +2,49 @@
   <div class="menu">
     <h1 class="title">Menu</h1>
     <div class="menu-lists">
-      <menu-list name="Iced Coffee" price="2.50" class="coffee" :key="name"></menu-list>
+      <!-- <menu-list name="Iced Coffee" price="2.50" class="coffee" :key="name"></menu-list>
       <ul class="menu-list coffee">
-        <li v-for="item in menuItemsObj.coffeeItems" :key="item.itemName" class="menu-item">
+        <li v-for="item in menuDataObj.coffeeItems" :key="item.itemName" class="menu-item">
           {{item.itemName}} - ${{item.price}}
         </li>
       </ul>
       <ul class="menu-list sandwiches">
-        <li v-for="item in menuItemsObj.breakfastItems" :key="item.itemName" class="menu-item">
+        <li v-for="item in menuDataObj.breakfastItems" :key="item.itemName" class="menu-item">
           {{item.itemName}} - ${{item.price}}
         </li>
       </ul>
       <ul class="menu-list bsandp">
-        <li v-for="item in menuItemsObj.breakfastSandwiches" :key="item.itemName" class="menu-item">
+        <li v-for="item in menuDataObj.breakfastSandwiches" :key="item.itemName" class="menu-item">
           {{item.itemName}} - ${{item.price}}
         </li>
       </ul>
       <ul class="menu-list favorites">
-        <li v-for="item in menuItemsObj.favorites" :key="item.itemName" class="menu-item">
+        <li v-for="item in menuDataObj.favorites" :key="item.itemName" class="menu-item">
           {{item.itemName}} - ${{item.price}}
         </li>
-      </ul>
+      </ul> -->
     </div>
   </div>
 </template>
 
 <script>
-import menuItems from "~/assets/contentful.json";
+import menuData from "~/assets/contentful.json";
 import MenuList from "../components/MenuList.vue";
 
-const menuItemsObj = {
-  coffeeItems: [],
-  breakfastItems: [],
-  breakfastSandwiches: [],
-  favorites: []
-};
+const menuDataObj = {};
 
-menuItems.forEach(menuItem => {
-  if (menuItem.sys.contentType.sys.id === "coffee") {
-    menuItemsObj.coffeeItems.push(menuItem.fields);
-  }
-  if (menuItem.sys.contentType.sys.id === "breakfastItems") {
-    menuItemsObj.breakfastItems.push(menuItem.fields);
-  }
-  if (menuItem.sys.contentType.sys.id === "breakfastSandwiches") {
-    menuItemsObj.breakfastSandwiches.push(menuItem.fields);
-  }
-  if (menuItem.sys.contentType.sys.id === "mainStreetFavorites") {
-    menuItemsObj.favorites.push(menuItem.fields);
+menuData.forEach(item => {
+  if (!menuDataObj[item.fields.category.fields.categoryTitle]) {
+    menuDataObj[item.fields.category.fields.categoryTitle] = [item];
+  } else {
+    menuDataObj[item.fields.category.fields.categoryTitle].push(item);
   }
 });
-
+console.log(menuDataObj);
 export default {
   data() {
     return {
-      menuItemsObj
+      menuDataObj
     };
   },
   components: {
