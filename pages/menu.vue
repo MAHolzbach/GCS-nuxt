@@ -2,27 +2,10 @@
   <div class="menu">
     <h1 class="title">Menu</h1>
     <div class="menu-lists">
-      <!-- <menu-list name="Iced Coffee" price="2.50" class="coffee" :key="name"></menu-list>
-      <ul class="menu-list coffee">
-        <li v-for="item in menuDataObj.coffeeItems" :key="item.itemName" class="menu-item">
-          {{item.itemName}} - ${{item.price}}
-        </li>
+      <ul v-for="(items, categoryName) in menuDataObj" v-bind:key=categoryName class="menu-list">
+        <h1 class="title">{{categoryName}}</h1>
+        <MenuList v-for="item in items" v-bind:name="item.fields.name" v-bind:price="item.fields.price" class="coffee" v-bind:key=item.fields.name></MenuList>
       </ul>
-      <ul class="menu-list sandwiches">
-        <li v-for="item in menuDataObj.breakfastItems" :key="item.itemName" class="menu-item">
-          {{item.itemName}} - ${{item.price}}
-        </li>
-      </ul>
-      <ul class="menu-list bsandp">
-        <li v-for="item in menuDataObj.breakfastSandwiches" :key="item.itemName" class="menu-item">
-          {{item.itemName}} - ${{item.price}}
-        </li>
-      </ul>
-      <ul class="menu-list favorites">
-        <li v-for="item in menuDataObj.favorites" :key="item.itemName" class="menu-item">
-          {{item.itemName}} - ${{item.price}}
-        </li>
-      </ul> -->
     </div>
   </div>
 </template>
@@ -40,7 +23,7 @@ menuData.forEach(item => {
     menuDataObj[item.fields.category.fields.categoryTitle].push(item);
   }
 });
-console.log(menuDataObj);
+
 export default {
   data() {
     return {

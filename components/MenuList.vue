@@ -1,8 +1,5 @@
 <template>
   <ul class="menu-list">
-    <!-- <li v-for="item in menuItemsObj.coffeeItems" :key="item.itemName" class="menu-item">
-      {{item.itemName}} - ${{item.price}}
-    </li> -->
     <li :key="key" class="menu-item class">{{name}} - ${{price}}</li>
   </ul>
 </template>
