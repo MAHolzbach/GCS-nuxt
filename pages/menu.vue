@@ -4,7 +4,7 @@
     <div class="menu-lists">
       <ul v-for="(items, categoryName) in menuDataObj" v-bind:key=categoryName class="menu-list">
         <h1 class="title">{{categoryName}}</h1>
-        <MenuList v-for="item in items" v-bind:name="item.fields.name" v-bind:price="item.fields.price" class="coffee" v-bind:key=item.fields.name></MenuList>
+        <MenuList v-for="item in items" v-bind:name="item.fields.name" v-bind:price="item.fields.price" class="list" v-bind:key=item.fields.name></MenuList>
       </ul>
     </div>
   </div>
@@ -60,6 +60,12 @@ export default {
       "coffee bsandp"
       "favorites sandwiches";
   }
+}
+.menu-lists:nth-child(odd) {
+  text-align: left;
+}
+.menu-lists:nth-child(even) {
+  text-align: right;
 }
 .title {
   text-align: center;
