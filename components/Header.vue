@@ -17,6 +17,10 @@
   height: 15em;
   width: 100%;
   padding-bottom: 20px;
+
+  @include md {
+    height: 17em;
+  }
 }
 .title,
 .subtitle {

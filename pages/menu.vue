@@ -1,11 +1,13 @@
 <template>
   <div class="menu">
-    <h1 class="title">Menu</h1>
-    <div class="menu-lists">
-      <ul v-for="(items, categoryName) in menuDataObj" v-bind:key=categoryName class="menu-list">
-        <h1 class="title">{{categoryName}}</h1>
-        <MenuList v-for="item in items" v-bind:name="item.fields.name" v-bind:price="item.fields.price" class="list" v-bind:key=item.fields.name></MenuList>
-      </ul>
+    <div class="overlay">
+      <h1 class="menu-title">Our Menu</h1>
+      <div class="menu-lists">
+        <ul v-for="(items, categoryName) in menuDataObj" v-bind:key=categoryName class="menu-ul">
+          <h1 class="category-title">{{categoryName}}</h1>
+          <MenuList v-for="item in items" v-bind:name="item.fields.name" v-bind:price="item.fields.price" class="list" v-bind:key=item.fields.name></MenuList>
+        </ul>
+      </div>
     </div>
   </div>
 </template>
@@ -46,6 +48,11 @@ export default {
   background-size: cover;
   margin-top: 20px;
 }
+.overlay {
+  padding: 20px;
+  background-color: rgba(192, 192, 192, 0.7);
+  width: 100%;
+}
 .menu-lists {
   display: grid;
   grid-template-areas:
@@ -61,17 +68,34 @@ export default {
       "favorites sandwiches";
   }
 }
-.menu-lists:nth-child(odd) {
+.menu-title {
+  text-align: center;
+  margin-bottom: 15px;
+  text-decoration: underline;
+}
+.menu-ul {
+  padding-left: 0;
+}
+.menu-ul:nth-of-type(odd) {
+  @include md {
+    text-align: left;
+  }
+}
+.menu-ul:nth-of-type(even) {
+  @include md {
+    text-align: right;
+  }
+}
+.category-title h1:nth-of-type(odd) {
   text-align: left;
 }
-.menu-lists:nth-child(even) {
+.category-title h1:nth-of-type(even) {
   text-align: right;
 }
-.title {
-  text-align: center;
-}
-.list-title {
+.category-title {
   color: $brand-brown;
   line-height: 40px;
+  -webkit-text-stroke-width: 0.2px;
+  -webkit-text-stroke-color: #fff;
 }
 </style>

@@ -21,7 +21,8 @@ export default {
 
 .menu-list {
   list-style: none;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  padding: 0;
 }
 .menu-item {
   font-size: 1.2em;
