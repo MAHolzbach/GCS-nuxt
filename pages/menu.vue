@@ -5,7 +5,7 @@
       <div class="menu-lists">
         <ul v-for="(items, categoryName) in menuDataObj" v-bind:key=categoryName class="menu-ul">
           <h1 class="category-title">{{categoryName}}</h1>
-          <MenuList v-for="item in items" v-bind:name="item.fields.name" v-bind:price="item.fields.price" class="list" v-bind:key=item.fields.name></MenuList>
+          <MenuList v-for="item in items" v-bind:name="item.fields.name" v-bind:price="item.fields.price" v-bind:key=item.fields.name></MenuList>
         </ul>
       </div>
     </div>

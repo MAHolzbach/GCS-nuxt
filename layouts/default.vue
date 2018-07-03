@@ -1,6 +1,5 @@
 <template>
   <div>
-    <Header/>
     <Navbar/>
     <nuxt/>
     <Footer/>
@@ -14,13 +13,11 @@ import Footer from "../components/Footer.vue";
 
 export default {
   components: {
-    Header,
     Navbar,
     Footer
   }
 };
 </script>
-
 
 <style lang="scss">
 html {

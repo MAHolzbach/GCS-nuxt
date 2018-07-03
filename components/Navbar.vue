@@ -1,5 +1,5 @@
 <template lang="pug">
-- const links = [["Home", "home", "/"], ["Menu", "coffee", "/menu"], ["Contact Us", "envelope", "/contact"]]
+- const links = [["Home", "home", "/"], ["Menu", "coffee", "/menu"], ["Contact Us", "envelope", "/contact"], ["About", "info", "/about"]]
   div.navbar
     div.nav-links
       each link in links
@@ -10,6 +10,8 @@
 
 <style lang="scss" scoped>
 @import "../assets/variables.scss";
+@import url("https://fonts.googleapis.com/css?family=Righteous");
+
 .navbar {
   width: 80%;
   margin: 0 auto;
