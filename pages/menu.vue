@@ -46,7 +46,6 @@ export default {
   background-image: url("~/static/white-coffee-img.jpg");
   font-family: Righteous, cursive;
   background-size: cover;
-  margin-top: 20px;
 }
 .overlay {
   padding: 20px;
