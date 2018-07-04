@@ -31,17 +31,13 @@ const rightLinks = [["Contact", "envelope", "/contact"], ["About", "info", "/abo
 
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   max-width: 80%;
   margin: 20px auto;
   border-top: 2px solid black;
   border-bottom: 2px solid black;
   text-align: center;
-
-  @include md {
-    justify-content: space-around;
-  }
 }
 .nav-links {
   font-family: "Righteous", cursive;
@@ -73,14 +69,24 @@ const rightLinks = [["Contact", "envelope", "/contact"], ["About", "info", "/abo
 
     @include md {
       display: block;
+      font-size: 1.8em;
+    }
+
+    @include lg {
+      font-size: 1em;
     }
   }
 
   & .link-text {
-    font-size: 1em;
+    font-size: 2.5em;
+
     @include md {
-      font-size: 1.5em;
+      font-size: 1.8em;
       margin-left: 10px;
+    }
+
+    @include lg {
+      font-size: 1em;
     }
   }
 

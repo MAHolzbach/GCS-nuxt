@@ -1,5 +1,6 @@
 //Breakpoints
 $screen-xs: 425px;
+$screen-xs-to-sm: 568px;
 $screen-sm: 576px;
 $screen-md: 768px;
 $screen-lg: 992px;
@@ -9,6 +10,11 @@ $screen-xxl: 1500px;
 // Mixins
 @mixin xs {
   @media (min-width: #{$screen-xs}) {
+    @content;
+  }
+}
+@mixin xs-to-sm {
+  @media (min-width: #{$screen-xs-to-sm}) {
     @content;
   }
 }

@@ -1,8 +1,26 @@
-<template lang="pug">
-  div
-    div.content
-      div.grid-square.logo-area
-        img(src="../static/gcs-logo.jpg", alt="logo").logo
+<template>
+  <div>
+    <div class="content">
+      <div class="title-box">
+        <h1 class="title">Grounds Central Station</h1>
+        <h4 class="sub-title">9360 Main St. Manassas VA, 20110 </h4>
+      </div>
+      <div class="hours-box">
+        <h4 class="sub-title">
+          Mon-Thurs: 6am-9pm          
+        </h4>
+        <h4 class="sub-title">
+          Fri: 6am-10pm
+        </h4>
+        <h4 class="sub-title">
+          Sat: 7am-10pm
+        </h4>
+        <h4 class="sub-title">
+          Sun: 8am-8pm
+        </h4>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -14,48 +32,47 @@ export default {};
 
 .content {
   display: grid;
-  grid-template-areas: "logo-area";
-  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica,
-    Arial, sans-serif;
-  margin: 30px 10px;
+  grid-template-rows: 1fr 1fr 1fr;
+  font-family: Righteous, cursive;
+  background-image: url("~/static/white-coffee-img.jpg");
+  background-size: cover;
+  background-position: center;
+  height: auto;
+  min-height: 70vh;
+  grid-gap: 20px;
+  grid-template-areas:
+    "title"
+    "..."
+    "hours";
 
-  @include md {
-    grid-template-columns: 1fr;
-    grid-template-areas: "logo-area";
+  @include xs-to-sm {
+    grid-template-rows: none;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "title ... hours";
   }
 }
-.grid-square {
-  padding: 20px;
+.title-box {
+  grid-area: title;
+  align-self: center;
+  text-align: center;
+}
+.title {
+  font-size: 3em;
 
-  h2 {
-    font-size: 1.8em;
-    text-align: center;
-
-    @include md {
-      font-weight: 500;
-      font-size: 2.2em;
-    }
-  }
-  p {
-    font-size: 1.1em;
-
-    @include md {
-      font-weight: 400;
-      font-size: 1.4em;
-    }
+  @include lg {
+    font-size: 2em;
   }
 }
-.logo-area {
-  grid-area: logo-area;
+.hours-box {
+  grid-area: hours;
+  align-self: center;
+  text-align: center;
 }
-.logo {
-  width: 100%;
-}
-.about {
-  grid-area: about;
-}
-.history {
-  grid-area: history;
+.sub-title {
+  font-size: 2em;
+
+  @include lg {
+    font-size: 1em;
+  }
 }
 </style>

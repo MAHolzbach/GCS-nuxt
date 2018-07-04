@@ -7,7 +7,6 @@
 </template>
 
 <script>
-import Header from "../components/Header.vue";
 import Navbar from "../components/Navbar.vue";
 import Footer from "../components/Footer.vue";
 
@@ -21,7 +20,7 @@ export default {
 
 <style lang="scss">
 html {
-  font-size: 16px;
+  font-size: 2vw;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
