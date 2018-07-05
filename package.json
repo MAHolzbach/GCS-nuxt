@@ -6,8 +6,8 @@
   "private": true,
   "scripts": {
     "contentful": "node plugins/contentful.js",
-    "dev": "contentful && nuxt",
-    "build": "contentful && nuxt build",
+    "dev": "npm run contentful && nuxt",
+    "build": "npm run contentful && nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
     "precommit": "npm run lint"
