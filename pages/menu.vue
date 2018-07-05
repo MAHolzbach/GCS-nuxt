@@ -43,8 +43,8 @@ export default {
 @import "~/assets/variables.scss";
 
 .menu {
-  background-image: url("~/static/white-coffee-img.jpg");
   font-family: Righteous, cursive;
+  background-image: url("~/static/white-coffee-img.jpg");
   background-size: cover;
 }
 .overlay {
@@ -71,6 +71,10 @@ export default {
   text-align: center;
   margin-bottom: 15px;
   text-decoration: underline;
+
+  @include md {
+    font-size: 1.8em;
+  }
 }
 .menu-ul {
   padding-left: 0;
@@ -96,5 +100,15 @@ export default {
   line-height: 40px;
   -webkit-text-stroke-width: 0.2px;
   -webkit-text-stroke-color: #fff;
+  font-size: 3.5em;
+  margin-bottom: 10px;
+
+  @include md {
+    font-size: 1.8em;
+  }
+
+  @include lg {
+    font-size: 1.2em;
+  }
 }
 </style>

@@ -1,16 +1,22 @@
-<template lang="pug">
-  div.footer
-    div.address
-      p <strong>Grounds Central Station</strong>
-      p 9360 Main Street, Manassas VA, 20110
-    div.facebook
-      p Like us on Facebook!
-      div(data-href="https://www.facebook.com/Groundscentralstation/" data-width="87" data-layout="button_count" data-action="like" data-size="large" data-show-faces="true" data-share="true").fb-like
-    div.hours
-      p Mon-Thurs: 6am - 9pm
-      p Fri: 6am- 10pm
-      p Sat: 7am - 10pm 
-      p Sun: 8am - 8pm
+<template>
+  <div class="footer">
+    <div class="address">
+      <p>
+        <strong>Grounds Central Station</strong>
+      </p>
+      <p>9360 Main Street, Manassas VA, 20110</p>
+    </div>
+    <div class="facebook">
+      <p>Like us on Facebook!</p>
+      <div class="fb-like" data-href="https://www.facebook.com/Groundscentralstation/" data-width="87" data-layout="button_count" data-action="like" data-size="large" data-show-faces="true" data-share="true"></div>
+    </div>
+    <div class="hours">
+      <p>Mon-Thurs: 6am - 9pm</p>
+      <p>Fri: 6am- 10pm</p>
+      <p> Sat: 7am - 10pm</p>
+      <p>Sun: 8am - 8pm</p>
+    </div>
+  </div>
 </template>
 
 <style lang="scss" scoped>

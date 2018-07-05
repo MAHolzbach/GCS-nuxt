@@ -23,8 +23,16 @@ export default {
   padding: 0;
 }
 .menu-item {
-  font-size: 1.2em;
+  font-size: 2.5em;
   line-height: 30px;
+
+  @include md {
+    font-size: 1em;
+  }
+
+  @include lg {
+    font-size: 0.7em;
+  }
 }
 </style>
 

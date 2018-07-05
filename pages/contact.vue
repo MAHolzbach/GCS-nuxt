@@ -1,6 +1,7 @@
-<template lang="pug">
-  div
-    div.contact
+<template>
+  <div>
+    <div class="contact"></div>
+  </div>
 </template>
 
 <script>

@@ -1,11 +1,17 @@
 <template>
   <div class="navbar">
     <div class="nav-links">
-      <nuxt-link v-for="link in leftLinks" v-bind:key="link[0]" :to="`${link[2]}`" class="nav-link"><i :class="`fa fa-${link[1]} fa-2x`"></i><span class="link-text">{{link[0]}}</span></nuxt-link>
+      <nuxt-link v-for="link in leftLinks" v-bind:key="link[0]" :to="`${link[2]}`" class="nav-link">
+        <i :class="`fa fa-${link[1]} fa-2x`"></i>
+        <span class="link-text">{{link[0]}}</span>
+      </nuxt-link>
     </div>
     <img src="~/static/gcs-logo.jpg" class="logo" alt="logo">
     <div class="nav-links">
-      <nuxt-link v-for="link in rightLinks" v-bind:key="link[0]" :to="`${link[2]}`" class="nav-link"><i :class="`fa fa-${link[1]} fa-2x`"></i><span class="link-text">{{link[0]}}</span></nuxt-link>
+      <nuxt-link v-for="link in rightLinks" v-bind:key="link[0]" :to="`${link[2]}`" class="nav-link">
+        <i :class="`fa fa-${link[1]} fa-2x`"></i>
+        <span class="link-text">{{link[0]}}</span>
+      </nuxt-link>
     </div>
   </div>
 </template>
@@ -13,15 +19,18 @@
 <script>
 export default {
   data() {
-    return{
+    return {
       leftLinks,
       rightLinks
-    }
+    };
   }
-}
+};
 
 const leftLinks = [["Home", "home", "/"], ["Menu", "coffee", "/menu"]];
-const rightLinks = [["Contact", "envelope", "/contact"], ["About", "info", "/about"]];
+const rightLinks = [
+  ["Contact", "envelope", "/contact"],
+  ["About", "info", "/about"]
+];
 </script>
 
 
@@ -35,16 +44,17 @@ const rightLinks = [["Contact", "envelope", "/contact"], ["About", "info", "/abo
   align-items: center;
   max-width: 80%;
   margin: 20px auto;
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
   text-align: center;
 }
 .nav-links {
   font-family: "Righteous", cursive;
   display: inline;
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
 
   @include md {
     display: flex;
+    padding: 20px 0;
     justify-content: space-around;
     width: 100%;
   }
