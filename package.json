@@ -5,9 +5,9 @@
   "author": "Mike Holzbach",
   "private": true,
   "scripts": {
-    "predev": "node plugins/contentful.js",
-    "dev": "nuxt",
-    "build": "nuxt build",
+    "contentful": "node plugins/contentful.js",
+    "dev": "contentful && nuxt",
+    "build": "contentful && nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
     "precommit": "npm run lint"
