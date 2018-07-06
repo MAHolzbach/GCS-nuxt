@@ -21,6 +21,14 @@
   min-height: 70vh;
   padding: 20px;
   background-color: rgba(192, 192, 192, 0.7);
+
+  @include md {
+    padding: 20px 80px;
+  }
+
+  @include lg {
+    padding: 20px 150px;
+  }
 }
 .title {
   font-size: 4em;

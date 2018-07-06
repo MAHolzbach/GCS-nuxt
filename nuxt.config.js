@@ -12,7 +12,12 @@ module.exports = {
     // link: [
     //    { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     // ]
-    script: [{ src: "https://use.fontawesome.com/releases/v5.0.13/js/all.js" }]
+    link: [
+      {
+        rel: "stylesheet",
+        href: "https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+      }
+    ]
   },
   generate: {
     fallback: true

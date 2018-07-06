@@ -2,14 +2,14 @@
   <div class="navbar">
     <div class="nav-links">
       <nuxt-link v-for="link in leftLinks" v-bind:key="link[0]" :to="`${link[2]}`" class="nav-link">
-        <i :class="`fa fa-${link[1]} fa-2x`"></i>
+        <i :class="`fas fa-${link[1]} fa-2x`"></i>
         <span class="link-text">{{link[0]}}</span>
       </nuxt-link>
     </div>
     <img src="~/static/gcs-logo.jpg" class="logo" alt="logo">
     <div class="nav-links">
       <nuxt-link v-for="link in rightLinks" v-bind:key="link[0]" :to="`${link[2]}`" class="nav-link">
-        <i :class="`fa fa-${link[1]} fa-2x`"></i>
+        <i :class="`fas fa-${link[1]} fa-2x`"></i>
         <span class="link-text">{{link[0]}}</span>
       </nuxt-link>
     </div>
