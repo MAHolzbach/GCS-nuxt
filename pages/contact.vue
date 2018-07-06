@@ -10,10 +10,11 @@
             <label for="email" class="c-form__label">Email</label>
             <input type="email" name="email" id="email" autocapitalize="none" autocorrect="off" class="c-form__input-field" required />
             <label for="message" class="c-form__label">Your message</label>
-            <textarea name="message" id="message" class="c-form__input-field" rows="10" required></textarea>
-            <button class="c-form__button" type="submit">Submit</button>    
+            <textarea name="message" id="message" class="c-form__input-field" rows="15" required></textarea>
+            <button class="c-form__button" type="submit">Submit</button>
           </fieldset>
         </form>
+        <div class="map"></div>
       </div>
     </div>
   </div>
@@ -35,6 +36,14 @@ export default {};
   min-height: 70vh;
   padding: 20px;
   background-color: rgba(192, 192, 192, 0.7);
+  display: flex;
+}
+.c-form {
+  flex: 1;
+
+  @include lg {
+    flex: 0.4;
+  }
 }
 .c-form__heading {
   font-size: 4em;
@@ -48,12 +57,16 @@ export default {};
     font-size: 1.3em;
   }
 }
-.c-form__label,
-.c-form__input {
-  display: block;
-}
 .c-form__label {
   font-size: 2.3em;
+
+  @include md {
+    font-size: 1.5em;
+  }
+
+  @include lg {
+    font-size: 0.8em;
+  }
 }
 .c-form__input-field {
   min-height: 30px;
@@ -64,6 +77,16 @@ export default {};
   padding: 3px 0px 3px 3px;
   margin: 5px 1px 3px 0px;
   border: 1px solid #dddddd;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 2.8em;
+
+  @include md {
+    font-size: 1.3em;
+  }
+
+  @include lg {
+    font-size: 0.8em;
+  }
 
   &:focus {
     box-shadow: 0 0 5px rgba(81, 203, 238, 1);
@@ -77,20 +100,22 @@ export default {};
   display: inline-block;
   position: relative;
   width: 100%;
-  height: 30px;
+  height: auto;
+  max-height: 50px;
   transition: all 0.2s linear 0s;
   background-color: $brand-brown;
   font-family: Righteous;
   font-size: 2.7em;
   border: none;
   border-radius: 4px;
-  overflow: hidden;
   cursor: pointer;
+  overflow: hidden;
+  padding: 10px 0;
 
   &:before {
     content: "\f1d8";
     font-family: "Font Awesome 5 Free";
-    font-size: 15px;
+    font-size: 1em;
     position: absolute;
     display: flex;
     align-items: center;
@@ -101,6 +126,7 @@ export default {};
     height: 100%;
     width: 40px;
     transition: all 0.2s linear 0s;
+    padding-right: 20px;
   }
 
   &:hover {
@@ -110,6 +136,14 @@ export default {};
       opacity: 1;
       text-indent: 0px;
     }
+  }
+
+  @include md {
+    font-size: 1.5em;
+  }
+
+  @include lg {
+    font-size: 0.8em;
   }
 }
 </style>
