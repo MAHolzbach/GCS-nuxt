@@ -15,7 +15,8 @@
   "dependencies": {
     "contentful": "^6.1.1",
     "dotenv": "^6.0.0",
-    "nuxt": "^1.0.0"
+    "nuxt": "^1.0.0",
+    "nuxt-google-maps-module": "^1.6.0"
   },
   "devDependencies": {
     "node-sass": "^4.9.0",

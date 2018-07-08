@@ -48,9 +48,13 @@ export default {
   background-size: cover;
 }
 .overlay {
-  padding: 20px;
+  padding: 30px;
   background-color: rgba(192, 192, 192, 0.7);
   width: 100%;
+
+  @include md {
+    padding: 30px 100px;
+  }
 }
 .menu-lists {
   display: grid;
@@ -71,6 +75,7 @@ export default {
   text-align: center;
   margin-bottom: 15px;
   text-decoration: underline;
+  font-size: 3.5em;
 
   @include md {
     font-size: 1.8em;

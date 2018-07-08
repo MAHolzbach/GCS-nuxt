@@ -14,14 +14,22 @@
             <button class="c-form__button" type="submit">Submit</button>
           </fieldset>
         </form>
-        <div class="map"></div>
+        <div class="map-container">
+          <GoogleMap name="gcs-location"></GoogleMap>
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-export default {};
+  import GoogleMap from "~/components/GoogleMap.vue";
+
+  export default {
+    components: {
+      GoogleMap
+    }
+  }
 </script>
 
 <style lang="scss" scoped>
@@ -37,9 +45,15 @@ export default {};
   padding: 20px;
   background-color: rgba(192, 192, 192, 0.7);
   display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+
+  @include md {
+    flex-direction: row;
+  }
 }
 .c-form {
-  flex: 1;
+  flex: 0.5;
 
   @include lg {
     flex: 0.4;
@@ -145,5 +159,11 @@ export default {};
   @include lg {
     font-size: 0.8em;
   }
+}
+.map-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0.5;
 }
 </style>
