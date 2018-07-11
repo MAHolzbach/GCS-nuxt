@@ -15,6 +15,12 @@
           </fieldset>
         </form>
         <div class="map-container">
+          <div class="hours">
+            <p>Mon-Thurs: 6am - 9pm</p>
+            <p>Fri: 6am- 10pm</p>
+            <p> Sat: 7am - 10pm</p>
+            <p>Sun: 8am - 8pm</p>
+          </div>
           <GoogleMap name="gcs-location"></GoogleMap>
         </div>
       </div>
@@ -23,13 +29,13 @@
 </template>
 
 <script>
-  import GoogleMap from "~/components/GoogleMap.vue";
+import GoogleMap from "~/components/GoogleMap.vue";
 
-  export default {
-    components: {
-      GoogleMap
-    }
+export default {
+  components: {
+    GoogleMap
   }
+};
 </script>
 
 <style lang="scss" scoped>
@@ -53,6 +59,10 @@
   }
 }
 .c-form {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
   flex: 0.5;
 
   @include lg {
@@ -163,7 +173,13 @@
 .map-container {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
+  flex-direction: column;
   flex: 0.5;
+}
+.hours {
+  font-family: Righteous, cursive;
+  text-align: center;
+  font-size: 24px;
 }
 </style>
