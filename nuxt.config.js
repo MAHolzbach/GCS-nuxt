@@ -19,6 +19,11 @@ module.exports = {
       {
         rel: "stylesheet",
         href: "https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+      },
+      {
+        rel: "icon",
+        type: "image/x-icon",
+        href: "/static/favicon.ico"
       }
     ]
   },
