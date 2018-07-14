@@ -23,35 +23,41 @@
   background-color: rgba(192, 192, 192, 0.7);
 
   @include md {
+    line-height: 2em;
     padding: 20px 80px;
   }
 
   @include lg {
     padding: 20px 150px;
   }
+
+  @include xl {
+    padding: 20px 300px;
+  }
 }
 .title {
-  font-size: 4em;
+  font-size: 1.8em;
   text-align: center;
+  margin-bottom: 20px;
 
   @include md {
-    font-size: 2.7em;
+    font-size: 2em;
+  }
+
+  @include lg {
+    font-size: 2em;
+  }
+}
+.info {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+
+  @include md {
+    font-size: 1.3em;
   }
 
   @include lg {
     font-size: 1.3em;
-  }
-}
-.info {
-  font-size: 3em;
-  margin-bottom: 20px;
-
-  @include md {
-    font-size: 1.5em;
-  }
-
-  @include lg {
-    font-size: 0.8em;
   }
 }
 </style>

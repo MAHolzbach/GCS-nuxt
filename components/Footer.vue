@@ -32,7 +32,7 @@
   padding: 30px;
   text-align: center;
   flex-direction: column;
-  font-size: 2em;
+  font-size: 1em;
 
   & div {
     margin-bottom: 10px;
@@ -40,15 +40,14 @@
 
   @include md {
     flex-direction: row;
-    font-size: 1em;
   }
 
   @include lg {
-    font-size: 0.8em;
+    font-size: 1em;
   }
 
   @include xl {
-    font-size: 0.5em;
+    font-size: 1.1em;
   }
 }
 </style>

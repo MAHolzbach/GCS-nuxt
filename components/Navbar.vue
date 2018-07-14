@@ -64,6 +64,7 @@ const rightLinks = [
   color: black;
   display: flex;
   align-items: center;
+  justify-content: center;
   margin: 10px 0;
 
   @include md {
@@ -79,24 +80,24 @@ const rightLinks = [
 
     @include md {
       display: block;
-      font-size: 1.8em;
+      font-size: 1.5em;
     }
 
     @include lg {
-      font-size: 1em;
+      font-size: 2em;
     }
   }
 
   & .link-text {
-    font-size: 2.5em;
+    font-size: 1.2em;
 
     @include md {
-      font-size: 1.8em;
+      font-size: 1.5em;
       margin-left: 10px;
     }
 
     @include lg {
-      font-size: 1em;
+      font-size: 2em;
     }
   }
 

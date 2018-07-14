@@ -57,10 +57,10 @@ export default {};
   text-align: center;
 }
 .title {
-  font-size: 3em;
+  font-size: 1.9em;
 
   @include lg {
-    font-size: 2em;
+    font-size: 3em;
   }
 }
 .hours-box {
@@ -69,10 +69,10 @@ export default {};
   text-align: center;
 }
 .sub-title {
-  font-size: 2em;
+  font-size: 1.2em;
 
   @include lg {
-    font-size: 1em;
+    font-size: 1.7em;
   }
 }
 </style>

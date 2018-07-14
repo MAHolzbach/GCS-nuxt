@@ -20,7 +20,7 @@ export default {
 
 <style lang="scss">
 html {
-  font-size: 1.8vw;
+  font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;

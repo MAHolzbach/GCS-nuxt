@@ -53,7 +53,15 @@ export default {
   width: 100%;
 
   @include md {
-    padding: 30px 100px;
+    padding: 30px 50px;
+  }
+
+  @include lg {
+    padding: 30px 75px;
+  }
+
+  @include xl {
+    padding: 30px 300px;
   }
 }
 .menu-lists {
@@ -75,7 +83,7 @@ export default {
   text-align: center;
   margin-bottom: 15px;
   text-decoration: underline;
-  font-size: 3.5em;
+  font-size: 1.7em;
 
   @include md {
     font-size: 1.8em;
@@ -105,7 +113,7 @@ export default {
   line-height: 40px;
   -webkit-text-stroke-width: 0.2px;
   -webkit-text-stroke-color: #fff;
-  font-size: 3.5em;
+  font-size: 1.7em;
   margin-bottom: 10px;
 
   @include md {
@@ -113,7 +121,7 @@ export default {
   }
 
   @include lg {
-    font-size: 1.2em;
+    font-size: 2em;
   }
 }
 </style>

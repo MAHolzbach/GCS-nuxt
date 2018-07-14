@@ -70,26 +70,30 @@ export default {
   }
 }
 .c-form__heading {
-  font-size: 4em;
+  font-size: 2em;
   text-align: center;
-
-  @include md {
-    font-size: 2.7em;
-  }
 
   @include lg {
     font-size: 1.3em;
   }
+
+  @include xl {
+    font-size: 1.6em;
+  }
 }
 .c-form__label {
-  font-size: 2.3em;
+  font-size: 1.5em;
 
   @include md {
     font-size: 1.5em;
   }
 
   @include lg {
-    font-size: 0.8em;
+    font-size: 1em;
+  }
+
+  @include xl {
+    font-size: 1.2em;
   }
 }
 .c-form__input-field {
@@ -102,14 +106,18 @@ export default {
   margin: 5px 1px 3px 0px;
   border: 1px solid #dddddd;
   font-family: "Times New Roman", Times, serif;
-  font-size: 2.8em;
+  font-size: 1.3em;
 
   @include md {
     font-size: 1.3em;
   }
 
   @include lg {
-    font-size: 0.8em;
+    font-size: 1em;
+  }
+
+  @include xl {
+    font-size: 1.2em;
   }
 
   &:focus {
@@ -129,7 +137,7 @@ export default {
   transition: all 0.2s linear 0s;
   background-color: $brand-brown;
   font-family: Righteous;
-  font-size: 2.7em;
+  font-size: 1.5em;
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -167,7 +175,11 @@ export default {
   }
 
   @include lg {
-    font-size: 0.8em;
+    font-size: 1.1em;
+  }
+
+  @include xl {
+    font-size: 1.4em;
   }
 }
 .map-container {
@@ -180,6 +192,7 @@ export default {
 .hours {
   font-family: Righteous, cursive;
   text-align: center;
-  font-size: 24px;
+  font-size: 1.2em;
+  margin: 10px 0;
 }
 </style>
