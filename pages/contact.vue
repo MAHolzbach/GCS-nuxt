@@ -1,4 +1,4 @@
-<template>
+<template lang="html">
   <div>
     <div class="contact">
       <div class="overlay">
@@ -11,9 +11,9 @@
             <input type="email" name="email" id="email" autocapitalize="none" autocorrect="off" class="c-form__input-field" required />
             <label for="message" class="c-form__label">Your message</label>
             <textarea name="message" id="message" class="c-form__input-field" rows="15" required></textarea>
-            <div netlify-recaptcha></div>
             <button class="c-form__button" type="submit">Submit</button>
           </fieldset>
+          <div netlify-recaptcha></div>
         </form>
         <div class="map-container">
           <div class="hours">
