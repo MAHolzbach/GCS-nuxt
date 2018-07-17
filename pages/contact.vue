@@ -2,7 +2,8 @@
   <div>
     <div class="contact">
       <div class="overlay">
-        <form class="c-form" name="contact" method="POST" netlify>
+        <form class="c-form" name="contact" method="POST" netlify data-netlify-honeypot="bot-field">
+          <input type="hidden" name="bot-field" />
           <fieldset class="c-form__set">
             <legend class="c-form__heading">Contact Us!</legend>
             <label for="name" class="c-form__label">Name</label>
@@ -11,7 +12,6 @@
             <input type="email" name="email" id="email" autocapitalize="none" autocorrect="off" class="c-form__input-field" required />
             <label for="message" class="c-form__label">Your message</label>
             <textarea name="message" id="message" class="c-form__input-field" rows="15" required></textarea>
-            <div data-netlify-recaptcha></div>
             <button class="c-form__button" type="submit">Submit</button>
           </fieldset>
         </form>
