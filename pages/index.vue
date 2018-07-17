@@ -6,7 +6,7 @@
     </div>
     <div class="hours-box">
       <h4 class="sub-title">
-        Mon-Thurs: 6am-9pm          
+        Mon-Thurs: 6am-9pm
       </h4>
       <h4 class="sub-title">
         Fri: 6am-10pm
@@ -19,8 +19,10 @@
       </h4>
     </div>
     <div class="online-order">
-      <i class="fas fa-utensils"></i>
-      Place your pickup orders here!
+      <a class="order-link" href="http://www.squareup.com/store/grounds-central-station">
+        <i class="fas fa-utensils"></i>
+        Place your pickup orders here!
+      </a>
     </div>
   </div>
 </template>
@@ -106,5 +108,9 @@ export default {};
   100% {
     -webkit-box-shadow: 0 0 0 0 rgba(150, 95, 65, 0);
   }
+}
+.order-link {
+  color: black;
+  text-decoration: none;
 }
 </style>
