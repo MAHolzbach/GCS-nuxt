@@ -8,7 +8,7 @@
     </div>
     <div class="facebook">
       <p>Like us on Facebook!</p>
-      <div class="fb-like" data-href="https://www.facebook.com/Groundscentralstation/" data-width="87" data-layout="button_count" data-action="like" data-size="large" data-show-faces="true" data-share="true"></div>
+      <div class="fb-like" data-href="https://www.facebook.com/Groundscentralstation/" data-layout="box_count" data-action="like" data-size="small" data-show-faces="false" data-share="true"></div>
     </div>
     <div class="hours">
       <p>Mon-Thurs: 6am - 9pm</p>

@@ -19,7 +19,7 @@
       </h4>
     </div>
     <div class="online-order">
-      <a class="order-link" href="http://www.squareup.com/store/grounds-central-station">
+      <a target="_blank" class="order-link" href="http://www.squareup.com/store/grounds-central-station">
         <i class="fas fa-utensils"></i>
         Place your pickup orders here!
       </a>
