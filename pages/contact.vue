@@ -2,11 +2,16 @@
   <div>
     <div class="contact">
       <div class="overlay">
+        <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+          <input type="text" name="name" />
+          <input type="email" name="email" />
+          <textarea name="message"></textarea>
+        </form>
         <form class="c-form" name="contact" method="POST" netlify-honeypot="bot-field" netlify>
           <fieldset class="c-form__set">
             <legend class="c-form__heading">Contact Us!</legend>
+            <input type="hidden" name="form-name" value="contact" />
             <label for="name" class="c-form__label">Name</label>
-            <input type="hidden" name="bot-field" />
             <input type="text" name="name" id="name" class="c-form__input-field" value="" autocorrect="off" required />
             <label for="email" class="c-form__label">Email</label>
             <input type="email" name="email" id="email" autocapitalize="none" autocorrect="off" class="c-form__input-field" required />
