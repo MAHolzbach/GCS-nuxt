@@ -47,8 +47,7 @@ export default {};
   grid-template-areas:
     "title"
     "..."
-    "hours"
-    "online-order";
+    "hours";
 
   @include xs-to-sm {
     grid-template-rows: none;
@@ -77,6 +76,7 @@ export default {};
   align-self: center;
   text-align: center;
   padding: 25px 0;
+  margin-bottom: 10px;
 }
 .sub-title {
   font-size: 1.2em;
@@ -89,13 +89,15 @@ export default {};
   grid-area: hours;
   align-self: end;
   text-align: center;
-  font-size: 1.2em;
+  font-size: 1em;
   box-shadow: 0 0 0 rgba(150, 95, 65, 1);
   animation: pulse 2s infinite;
+  margin: 0px 10px 10px 10px;
 
   @include md {
     grid-area: title;
-    margin: 40px;
+    margin: 10px;
+    font-size: 1.2em;
   }
 }
 @keyframes pulse {

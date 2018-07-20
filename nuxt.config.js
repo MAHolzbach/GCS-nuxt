@@ -13,6 +13,9 @@ module.exports = {
       {
         src:
           "https://maps.googleapis.com/maps/api/js?key=AIzaSyBQNZLwWEaWmxJXENTyqVQn0Zc4toUAX00"
+      },
+      {
+        src: "/FBLikeButton.js"
       }
     ],
     link: [
